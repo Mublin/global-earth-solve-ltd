@@ -92,6 +92,71 @@ nav .nav-items a{
         transform: scaleY(0);
     }
 }
+nav .button{
+    transform: scale(0);
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+@media only screen and (max-width: 620px) {
+    nav.nav.active-nav{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .nav .nav-logo{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-items{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: var(--color-black) !important;
+        height: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+    .active{
+        height: 200%;
+        overflow: visible;
+        z-index: 20;
+        /* background-color: var(--color-black); */
+    }
+    nav .button{
+        visibility: visible;
+        transform: scale(1);
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button i::before{
+        font-size: x-large;
+    }
+    .button i:hover{
+        color: var(--color-action);
+        cursor: pointer;
+    }
+    .nav-items a{
+        border-top: .2px solid var(--color-primary-dark);
+    }
+    .image{
+        width: 100vw;
+        height: 100vh;
+    }
+    .nav-items{
+        transform: scale(1);
+    }
+    /* .nav-items.active{
+        display: flex;
+        flex-direction: column;
+    } */
+}
 #services{
     padding-top: 20px;
     background-color: var(--color-secondary-dark) !important;
