@@ -15,8 +15,7 @@ html{
     scroll-behavior: smooth;
 }
 .container{
-    background-color: var(--color-tertiary);
-    color: #fff;
+    color: #000;
 }
 .container nav{
     background-color: var(--color-black);
@@ -59,6 +58,10 @@ nav .nav-items a{
     justify-content: center;
     font-weight: bolder;
     text-transform: uppercase;
+}
+.ab{
+    margin: 1rem 2rem !important;
+    box-shadow: 0 0 10px var(--color-action);
 }
 .sections.a1{
     margin: 0;
@@ -121,7 +124,7 @@ nav .button{
         transition: all .5s;
     }
     .active{
-        height: 200%;
+        height: 215%;
         overflow: visible;
         z-index: 20;
         /* background-color: var(--color-black); */
@@ -156,6 +159,15 @@ nav .button{
         display: flex;
         flex-direction: column;
     } */
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 290px;
+    }
+    .form input{
+        size: 20px !important;
+    }
 }
 #services{
     padding-top: 20px;
@@ -268,6 +280,7 @@ textarea{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 .media .social{
@@ -275,12 +288,31 @@ textarea{
     min-width: 300px; 
     margin: 0 6rem;
 }
+.social div{
+    margin-top: 1rem;
+}
+.social i{
+    color: #000 !important;
+    font-size: 2.2rem;
+}
+.social div
 .social a{
     color: #000 !important;
     transition: .4s all;
 }
 .social a:hover{
-    color: var(--color-action) !important;
+    color: var(--color-primary-dark) !important;
+    color: #000;
+}
+a button{
+    background-color: var(--color-action);
+    color: #fff;
+    padding: 6px 17px;
+    border: none;
+}
+a button:hover{
+    background-color: var(--color-primary-dark);
+    color: #000;
 }
 .footer{
     height: 35px;
