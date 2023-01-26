@@ -48,6 +48,8 @@ nav.active-nav{
     height: 50px;
     transform: scale(1);
     transition: .8s all;
+    background-color: #846267;
+    color: #fff;
 }
 nav .nav-items a{
     margin-right: 1.3rem;
@@ -61,7 +63,7 @@ nav .nav-items a{
 }
 .ab{
     margin: 1rem 2rem !important;
-    box-shadow: 0 0 10px var(--color-action);
+    box-shadow: 0 0 10px #846267;
 }
 .sections.a1{
     margin: 0;
@@ -171,8 +173,8 @@ nav .button{
 }
 #services{
     padding-top: 20px;
-    background-color: var(--color-secondary-dark) !important;
-    color: #fff;
+    background-color: #AEB4A9 !important;
+    color: #000;
 }
 h2{
     margin-bottom: 0.7rem;
@@ -182,7 +184,7 @@ section{
     color: #000;
 }
 section.a2{
-    background-color: var(--color-secondary-dark);
+    background-color: #AEB4A9;
     color: #000;
     margin: 0;
 }
@@ -196,7 +198,7 @@ section.a2{
     flex-wrap: wrap;
 }
 .service{
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 .service .small-container{
     width: 290px;
@@ -211,7 +213,7 @@ section.a2{
     width: 100%;
 }
 #about{
-    background-color: var(--color-tertiary);
+    background-color: #846267;
     color: #fff !important;
 }
 #about div{
@@ -264,11 +266,12 @@ textarea{
     transition: .5s all;
     color: black;
     cursor: pointer;
-    background-color: var(--color-secondary-dark);
-}
-.form .submit input:hover{
     background-color: var(--color-action);
     color: #fff;
+}
+.form .submit input:hover{
+    background-color: var(--color-primary-dark);
+    color: #000;
 }
 .media{
     display: flex;
@@ -316,7 +319,8 @@ a button:hover{
 }
 .footer{
     height: 35px;
-    background-color: var(--color-black);
+    background-color: #846267;
+    color: #fff;
 }
 .foot{
     display: flex;
@@ -324,4 +328,6 @@ a button:hover{
     align-items: center;
     height: 100%;
     font-size: large;
+    background-color: #846267;
+    color: #fff;
 }
