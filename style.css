@@ -114,13 +114,14 @@ nav .button{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100%;
     }
     .nav-items{
         width: 100%;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        background-color: var(--color-black) !important;
+        background-color: #846267 !important;
         height: 0;
         overflow: hidden;
         transition: all .5s;
@@ -200,6 +201,14 @@ section.a2{
 .service{
     margin-right: 1rem;
 }
+.item-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-action);
+}
 .service .small-container{
     width: 290px;
     min-height: 400px;
@@ -221,6 +230,9 @@ section.a2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+#about p{
+    margin: 0 1rem;
 }
 .about-image{
     width: 274px;
