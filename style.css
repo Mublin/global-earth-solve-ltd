@@ -69,12 +69,79 @@ nav .nav-items a{
     margin: 0;
     position: relative;
 }
+.land-head{
+    height: 60%;
+    z-index: 2;
+    font-size: 41px;
+    font-family: 'Comic Sans MS', cursive !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    flex-direction: column;
+}
+.land-head h4{
+    margin-bottom: 3rem;
+}
+.land{
+    height: 100%;
+    width: 100%;
+}
+.land-head .life span{
+    display: flex;
+    color: skyblue;
+    margin-bottom: 3rem;
+    font-size: 44px;
+    font-weight: bold;
+    animation: lifeZ 4s 4s forwards infinite !important;
+    transform-origin: left;
+    transition: .2s all;
+}
+/* .siu.fas{
+    animation: waterZ 2s 2.2s forwards infinite;
+    transform-origin: top;
+}
+@keyframes waterZ {
+    0% {
+        transform: scaleY(0);
+    }
+    60%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+} */
+@keyframes lifeZ {
+    0% {
+        transform: scaleX(0);
+    }
+    40%{
+        transform: scaleX(0);
+    }
+    60%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+
+}
 .image{
     width: 100vw;
     height: 100vh;
     background: url("./images/R\ \(2\).jpeg") no-repeat;
     background-size: cover;
     margin: 0;
+}
+.land-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.land-body button{
+    border-radius: 13.5px;
 }
 .image .cover{
     position: absolute;
@@ -83,7 +150,7 @@ nav .nav-items a{
     background-color: var(--color-action);
     animation: remove 4s linear forwards;
     transform-origin: top;
-    z-index: 3;
+    z-index: 7;
     overflow: hidden;
 }
 @keyframes remove {
