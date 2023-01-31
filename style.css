@@ -170,6 +170,15 @@ nav .button{
     height: 0;
     width: 0;
 }
+@media only screen and (max-width: 400px) {
+    .land-head{
+        height: 80%;
+        font-size: 36px;
+    }
+    .life span{
+        font-size: 30px !important;
+    }
+}
 @media only screen and (max-width: 620px) {
     nav.nav.active-nav{
         display: flex;
