@@ -179,6 +179,27 @@ nav .button{
     .life span{
         font-size: 30px !important;
     }
+    .image .cover{
+    position: absolute;
+    height: 100vh;
+    width: 1000vw;
+    background-color: var(--color-action);
+    animation: remove 4s linear forwards;
+    transform-origin: top;
+    z-index: 7;
+    overflow: hidden;
+}
+    @keyframes remove {
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(.5);
+    }
+    100%{
+        transform: scaleY(0);
+    }
+}
 }
 @media only screen and (max-width: 620px) {
     nav.nav.active-nav{
