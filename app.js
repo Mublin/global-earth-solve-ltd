@@ -4,6 +4,8 @@ const home = document.getElementById("home")
 const nav = document.querySelector(".nav")
 const menu = document.querySelector(".fas")
 const navItems = document.querySelector(".nav-items")
+const rights = document.querySelector(".foots")
+
 // console.log(menu)
 window.addEventListener("scroll", navBar)
 function navBar() {
@@ -17,3 +19,4 @@ menu.addEventListener("click", ()=>{
     navItems.classList.toggle("active")
 })
 navBar();
+rights.innerHTML = "All rights reserved " + new Date().getFullYear()
